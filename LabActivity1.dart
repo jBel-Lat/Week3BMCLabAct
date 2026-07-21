@@ -48,7 +48,7 @@ double readGrade(String message){
     stdout.write(message);
     grades = double.tryParse(stdin.readLineSync()!);
 
-    if (grades != null && grades >= 0 && grades <= 100 ){
+    if (grades != null && grades >= 0 && grades <= 100){
       return grades;
     }
     print("Invalid input. Enter a grade between 0 and 100.");
